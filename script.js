@@ -46,7 +46,7 @@ btnLogin.addEventListener("click", () => {
 
   signInWithEmailAndPassword(auth, email, senha)
     .then((userCredential) => {
-      msg.innerText = "Login realizado com sucesso!";
+      window.location.href = "home.html";
       console.log("Usuário logado:", userCredential.user);
     })
     .catch((error) => {
